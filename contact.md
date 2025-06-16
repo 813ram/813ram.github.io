@@ -9,7 +9,7 @@ Feel free to connect with me through any of the platforms below.
   <img src="linkedi.png" width="40">
   </a>
 <a href="https://inspirehep.net/authors/2853393" target="_blank">
-  <img src="inspireHEP.jpg" width="40">
+  <img src="inspireHEP.jpg" width="120">
 </a>
 <a href="https://github.com/813ram" target="_blank">
   <img src="githubicon.webp" width="40">

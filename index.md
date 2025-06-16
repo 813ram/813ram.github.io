@@ -1,8 +1,7 @@
 <nav>
-  <a href="index.md">Home</a> |
-  <a href="cv.md">CV</a> |
-  <a href="research.md">Research</a> |
-  <a href="contact.md">Contact</a>
+<a href="cv.html">CV</a> |
+<a href="research.html">Research</a> |
+<a href="contact.html">Contact</a>
 </nav>
 
 <table>

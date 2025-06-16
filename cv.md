@@ -1,3 +1,1 @@
-# CV  
-
-Coming soon!
+[View my CV](cv.pdf)

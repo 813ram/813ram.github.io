@@ -11,7 +11,7 @@
 <table border="1" cellspacing="10" cellpadding="10">
 <tr>
 <td width="200">
-  <img src="me_malda.jpg" width="200"><br>
+  <img src="th3.png" width="200"><br>
 </td>
 <td>
   <strong>Title of Paper 1</strong><br>
@@ -22,7 +22,7 @@
 
 <tr>
 <td width="200">
-  <img src="me_malda.jpg" width="200"><br>
+  <img src="jp2.png" width="200"><br>
 </td>
 <td>
   <strong>Title of Paper 2</strong><br>
@@ -33,7 +33,7 @@
 
 <tr>
 <td width="200">
-  <img src="me_malda.jpg" width="200"><br>
+  <img src="jp1.png" width="200"><br>
 </td>
 <td>
   <strong>Ryan Marin Fall 23 JP</strong><br>

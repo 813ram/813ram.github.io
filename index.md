@@ -1,7 +1,7 @@
 <nav>
-<a href="cv">CV</a> |
-<a href="research">Research</a> |
-<a href="contact">Contact</a>
+<a href="cv.html">CV</a> |
+<a href="research.html">Research</a> |
+<a href="contact.html">Contact</a>
 </nav>
 
 <table>

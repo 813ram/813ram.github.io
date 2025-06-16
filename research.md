@@ -31,6 +31,18 @@
 </td>
 </tr>
 
+<tr>
+<td width="200">
+  <img src="me_malda.jpg" width="200"><br>
+</td>
+<td>
+  <strong>Ryan Marin Fall 23 JP</strong><br>
+  <em>Short abstract or summary of paper 3...</em><br>
+  <a href="RyanMarinFall23JP.pdf">Junior Paper</a> | 
+  <a href="RyanMarinFall23Arxiv.pdf">ArXiv Preprint</a>
+</td>
+</tr>
+
 </table>
 
 </td>

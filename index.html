@@ -5,7 +5,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #fff; /* fallback */
+  background-color: #fff;
 }
 
 body::before {
@@ -13,7 +13,7 @@ body::before {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.7); /* white overlay at 70% opacity */
+  background: rgba(255, 255, 255, 0.7);
   z-index: -1;
 }
 
@@ -35,8 +35,28 @@ nav a {
 nav a:hover {
   background: #ddd;
 }
-</style>
 
+.banner {
+  width: 100%;
+  display: block;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.main-content img {
+  width: 200px;
+}
+
+.main-content-text {
+  flex: 1;
+}
+</style>
 
 <nav>
   <a href="index.html">Home</a> |
@@ -45,15 +65,13 @@ nav a:hover {
   <a href="contact.html">Contact</a>
 </nav>
 
-<table>
-<tr>
-<td width="200">
-  <img src="IMG_4335.jpg" width="200">
-</td>
-<td>
-  <h1>Hi, I’m Ryan Marin</h1>
-  <p>Welcome to my personal site.</p>
-  <p>This is where I share my work, research, and ways to contact me.</p>
-</td>
-</tr>
-</table>
+<img src="BHhighres.jpg" class="banner">
+
+<div class="main-content">
+  <img src="IMG_4335.jpg" alt="Ryan Marin">
+  <div class="main-content-text">
+    <h1>Hi, I’m Ryan Marin</h1>
+    <p>Welcome to my personal site.</p>
+    <p>This is where I share my work, research, and ways to contact me.</p>
+  </div>
+</div>

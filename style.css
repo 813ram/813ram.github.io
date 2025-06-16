@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #FF0000;
   background-image: url('your_background_image.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -19,7 +19,7 @@ body::before {
 }
 
 nav {
-  background: #290101;
+  background: #00FF00;
   padding: 10px;
   text-align: center;
   font-weight: bold;

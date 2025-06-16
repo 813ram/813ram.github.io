@@ -5,7 +5,7 @@ Feel free to connect with me through any of the platforms below.
 <hr>
 
 <p>
-<a href="https://www.linkedin.com/in/ryan-marin-6ba800171" target="_blank" style="margin-right: 15px;">
+<a href="https://www.linkedin.com/in/ryan-marin-6ba800171" target="_blank" style="margin-right: 40px;">
   <img src="linkedi.png" width="40">
 </a>
 

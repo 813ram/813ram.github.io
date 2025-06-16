@@ -4,7 +4,7 @@ Feel free to connect with me through any of the platforms below.
 
 <hr>
 
-<p>
+<div align="center">
 <a href="https://www.linkedin.com/in/ryan-marin-6ba800171" target="_blank">
   <img src="linkedi.png" width="40">
 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -20,4 +20,4 @@ Feel free to connect with me through any of the platforms below.
 <a href="https://instagram.com/ryanamarin" target="_blank">
   <img src="instagram.png" width="40">
 </a>
-</p>
+</div>

@@ -1,10 +1,4 @@
-# Contact  
-
-Feel free to connect with me through any of the platforms below.  
-
-<hr>
-
-<table>
+<table border="0" cellspacing="10">
 <tr>
 <td align="center" width="60">
   <a href="https://www.linkedin.com/in/ryan-marin-6ba800171" target="_blank">

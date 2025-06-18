@@ -144,17 +144,18 @@
 </div>
 </div>
 
+  
 <script>
 function toggleAbstract(button) {
   const container = button.previousElementSibling;
   if (container.style.maxHeight === 'none') {
     container.style.maxHeight = '14em';
     container.style.overflow = 'hidden';
-    button.innerText = '⬇ Show more';
+    button.innerText = '⬇⬇';
   } else {
     container.style.maxHeight = 'none';
     container.style.overflow = 'visible';
-    button.innerText = '⬆ Show less';
+    button.innerText = '⬆⬆';
   }
 }
 </script>

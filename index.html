@@ -52,17 +52,12 @@ let currentGreetingIndex = 0;
 let currentRotation = 0;
 
 function cycleDrum() {
-  // figure out next greeting index
   currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
   
-  // figure out which face will come into view next
   const faceIndex = (currentRotation + 1) % totalFaces;
-
-  // update its text
   faces[faceIndex].innerText = greetings[currentGreetingIndex];
-
-  // rotate
-  currentRotation = (currentRotation + 1) % totalFaces;
+  
+  currentRotation += 1;  // ✅ keep counting up forever
   drum.style.transform = `rotateX(-${currentRotation * angleStep}deg)`;
 }
 

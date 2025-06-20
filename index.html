@@ -38,40 +38,19 @@
 </div>
 
 </div>
-
 <script>
-const greetings = [
-  "Hello!",
-  "¡Hola!",
-  "Bonjour!",
-  "Hallo!",
-  "Ciao!",
-  "こんにちは!",
-  "안녕하세요!",
-  "你好!",
-  "Привет!",
-  "مرحبا!",
-  "שלום!"
-];
-
+const reel = document.getElementById('reel');
+const greetings = document.querySelectorAll('.greet');
 let current = 0;
-const greetingEl = document.getElementById("greeting");
-let angle = 0;
 
 function cycleGreeting() {
-  // Rotate the text container
-  angle += 180;
-  greetingEl.style.transform = `rotateX(${angle}deg)`;
-  
-  // Swap text just after rotation starts
-  setTimeout(() => {
-    current = (current + 1) % greetings.length;
-    greetingEl.innerText = greetings[current];
-  }, 400);  // halfway through the rotation
+  current = (current + 1) % greetings.length;
+  reel.style.transform = `translateY(-${current * 2}em)`;
 }
 
 setInterval(cycleGreeting, 4000);
 </script>
+
 
 
 

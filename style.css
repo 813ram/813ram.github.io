@@ -70,16 +70,28 @@ button {
 button:focus {
   outline: none;
 }
-.flip-container {
-  perspective: 1000px;
+.reel-container {
+  height: 2em;  /* adjust to fit your font size */
+  overflow: hidden;
   display: inline-block;
+  perspective: 1000px;
 }
 
-#greeting {
-  display: inline-block;
-  transform-origin: center;
+.reel {
+  display: flex;
+  flex-direction: column;
   transition: transform 0.8s ease-in-out;
+  transform-origin: center top;
 }
+
+.greet {
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-size: 2em;  /* adjust size to taste */
+  color: #fff;
+}
+
 
 
 

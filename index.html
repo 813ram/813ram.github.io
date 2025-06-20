@@ -19,13 +19,6 @@
     <div class="drum-face">¡Hola!</div>
     <div class="drum-face">Bonjour!</div>
     <div class="drum-face">Hallo!</div>
-    <div class="drum-face">Ciao!</div>
-    <div class="drum-face">こんにちは!</div>
-    <div class="drum-face">안녕하세요!</div>
-    <div class="drum-face">你好!</div>
-    <div class="drum-face">Привет!</div>
-    <div class="drum-face">مرحبا!</div>
-    <div class="drum-face">שלום!</div>
   </div>
 </div>
     <p>
@@ -39,21 +32,38 @@
 
 </div>
 <script>
+const greetings = [
+  "Hello!", "¡Hola!", "Bonjour!", "Hallo!",
+  "Ciao!", "こんにちは!", "你好!", "Привет!",
+  "مرحبا!", "שלום!"
+];
+
 const drum = document.getElementById('drum');
 const faces = document.querySelectorAll('.drum-face');
-const total = faces.length;
-const radius = 100; // depth of drum
-const angleStep = 360 / total;
+const totalFaces = faces.length; // 4
+const angleStep = 360 / totalFaces;
+const radius = 100;
 
 faces.forEach((face, i) => {
   face.style.transform = `rotateX(${i * angleStep}deg) translateZ(${radius}px)`;
 });
 
-let current = 0;
+let currentGreetingIndex = 0;
+let currentRotation = 0;
 
 function cycleDrum() {
-  current = (current + 1) % total;
-  drum.style.transform = `rotateX(-${current * angleStep}deg)`;
+  // figure out next greeting index
+  currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
+  
+  // figure out which face will come into view next
+  const faceIndex = (currentRotation + 1) % totalFaces;
+
+  // update its text
+  faces[faceIndex].innerText = greetings[currentGreetingIndex];
+
+  // rotate
+  currentRotation = (currentRotation + 1) % totalFaces;
+  drum.style.transform = `rotateX(-${currentRotation * angleStep}deg)`;
 }
 
 setInterval(cycleDrum, 4000);

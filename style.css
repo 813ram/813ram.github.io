@@ -70,27 +70,32 @@ button {
 button:focus {
   outline: none;
 }
-.reel-container {
-  height: 2em;  /* adjust to fit your font size */
-  overflow: hidden;
-  display: inline-block;
+.drum-container {
+  width: 300px;
+  height: 100px;
+  margin: auto;
   perspective: 1000px;
+  overflow: visible;
 }
 
-.reel {
-  display: flex;
-  flex-direction: column;
+.drum {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
   transition: transform 0.8s ease-in-out;
-  transform-origin: center top;
 }
 
-.greet {
-  height: 2em;
-  line-height: 2em;
+.drum-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 100px;
   text-align: center;
-  font-size: 2em;  /* adjust size to taste */
+  font-size: 2em;
   color: #fff;
 }
+
 
 
 

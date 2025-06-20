@@ -39,17 +39,25 @@
 
 </div>
 <script>
-const reel = document.getElementById('reel');
-const greetings = document.querySelectorAll('.greet');
+const drum = document.getElementById('drum');
+const faces = document.querySelectorAll('.drum-face');
+const total = faces.length;
+const angleStep = 360 / total;
+
+faces.forEach((face, i) => {
+  face.style.transform = `rotateX(${i * angleStep}deg) translateZ(150px)`;  // adjust Z for depth
+});
+
 let current = 0;
 
-function cycleGreeting() {
-  current = (current + 1) % greetings.length;
-  reel.style.transform = `translateY(-${current * 2}em)`;
+function cycleDrum() {
+  current = (current + 1) % total;
+  drum.style.transform = `rotateX(-${current * angleStep}deg)`;
 }
 
-setInterval(cycleGreeting, 4000);
+setInterval(cycleDrum, 4000);
 </script>
+=
 
 
 

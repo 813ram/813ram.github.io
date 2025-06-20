@@ -42,7 +42,7 @@ const drum = document.getElementById('drum');
 const faces = document.querySelectorAll('.drum-face');
 const totalFaces = faces.length; // 4
 const angleStep = 360 / totalFaces;
-const radius = 100;
+const radius = 40;
 
 faces.forEach((face, i) => {
   face.style.transform = `rotateX(${i * angleStep}deg) translateZ(${radius}px)`;

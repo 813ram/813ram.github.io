@@ -75,7 +75,8 @@ button:focus {
   height: 100px;
   margin: auto;
   perspective: 1000px;
-  overflow: visible;
+  overflow: hidden;  /* 👈 THIS hides the extra faces */
+  position: relative;
 }
 
 .drum {
@@ -94,7 +95,7 @@ button:focus {
   text-align: center;
   font-size: 2em;
   color: #fff;
-  background: transparent;
+  backface-visibility: hidden; /* 👈 Hide rear sides */
 }
 
 

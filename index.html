@@ -13,7 +13,9 @@
 <div class="main-content">
   <img src="headshotgrad.jpg" alt="Ryan Marin" style="width: 280px;"> <!-- original ~200px * 1.4 = 280px -->
   <div class="main-content-text">
-    <h1 id="greeting" class="flip-text">Hello!</h1>
+<h1 id="greeting-container" class="flip-container">
+  <span id="greeting">Hello!</span>
+</h1>
     <p>
   My name is Ryan Marin, and I am a recent graduate of Princeton University, holding an A.B. in physics. Though my academic focus is in modern theoretical physics, I am also curious about language, metaphysics, and Artificial Intelligence, a subset of which I occasionally write about on my Substack.
 </p>
@@ -42,21 +44,22 @@ const greetings = [
 
 let current = 0;
 const greetingEl = document.getElementById("greeting");
+let angle = 0;
 
 function cycleGreeting() {
-  // Trigger flip
-  greetingEl.style.transform = "rotateX(90deg)";
+  // Rotate the text container
+  angle += 180;
+  greetingEl.style.transform = `rotateX(${angle}deg)`;
   
+  // Swap text just after rotation starts
   setTimeout(() => {
-    // Change text halfway through flip
     current = (current + 1) % greetings.length;
     greetingEl.innerText = greetings[current];
-    // Complete flip back
-    greetingEl.style.transform = "rotateX(0deg)";
-  }, 300);  // half of 0.6s transition
+  }, 400);  // halfway through the rotation
 }
 
 setInterval(cycleGreeting, 4000);
 </script>
+
 
 
